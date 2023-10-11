@@ -2,8 +2,7 @@
   <div>
     <main>
       <ContentDoc v-slot="{ doc }">
-        <article
-          class="prose-base prose-zinc prose-invert bg-zinc-800/40 border border-[#7C7F82]/20 mx-auto p-12 rounded-lg">
+        <article class="prose-base prose-zinc prose-invert bg-[#1c1c1c] ring-[#282828] ring-1 mx-auto p-12 rounded-lg">
           <h1 class="text-4xl mb-8">{{ doc.title }}</h1>
           <ContentRenderer :value="doc" />
         </article>
@@ -24,6 +23,6 @@
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
-  @apply border border-[#7C7F82]/20;
+  @apply ring-[#282828] ring-1;
 }
 </style>

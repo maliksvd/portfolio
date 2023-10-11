@@ -3,7 +3,7 @@
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <ContentList path="/publications" v-slot="{ list }">
         <NuxtLink v-for="publication in list" :key="publication._path" :to="publication._path"
-          class="bg-zinc-800/40 p-6 border border-[#7C7F82]/20 rounded-lg">
+          class="bg-[#1c1c1c] p-6 ring-[#282828] ring-1 rounded-lg">
           <div class="flex flex-wrap mt-2">
             <span v-for="category in publication.categories" :key="category"
               :class="`px-6 py-1 rounded-lg text-sm bg-${getCategoryColor(category)}/10 text-${getCategoryColor(category)} ring-${getCategoryColor(category)}/20 ring-1 mb-2`">

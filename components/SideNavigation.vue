@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="bottom-0 fixed md:flex justify-center bg-[#1c1c1c] h-auto md:h-screen md:border-r md:border-r-[#7C7F82]/20 border-t border-t-[#7C7F82]/20 md:border-t-0 w-full md:w-auto py-4 md:py-0 px-4">
+      class="bottom-0 fixed md:flex justify-center bg-[#1c1c1c] h-auto md:h-screen md:border-r md:border-r-[#7C7F82]/20 border-t border-t-[#7C7F82]/20 md:border-t-0 w-full md:w-auto py-4 md:py-0 px-4 z-50">
       <nav>
         <ul class="flex md:flex-col justify-center items-center space-x-4 md:space-y-4 md:space-x-0 h-full">
           <li>

@@ -5,7 +5,7 @@
       inspire me.</p>
     <section class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
       <ContentList path="/inspiration" v-slot="{ list }">
-        <NuxtLink v-for="inspiration in list" :key="inspiration._path" :to="inspiration._path">
+        <NuxtLink v-for="inspiration in list" :key="inspiration._path" :to="inspiration.source">
           <div>
             <div v-if="inspiration.image"><img :src="inspiration.image"
                 class="opacity-50 rounded-lg h-48 mb-6 object-cover" alt="inspiration.title"></div>

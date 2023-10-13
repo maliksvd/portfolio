@@ -3,7 +3,7 @@
     <h2 class="font-semibold mb-2 text-xl">Inspiration Wall</h2>
     <p class="text-[#7c7f82] text-sm">Discover a curated collection resources: links, tweets, articles, and more that
       inspire me.</p>
-    <section class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+    <section class="mt-12 grid grid-cols-2 md:grid-cols-5 gap-8">
       <ContentList path="/inspiration" v-slot="{ list }">
         <NuxtLink v-for="inspiration in list" :key="inspiration._path" :to="inspiration.source">
           <div>

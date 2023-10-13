@@ -2,7 +2,7 @@
   <div>
     <h2 class="font-semibold mb-2 text-xl">All publications</h2>
     <p class="text-[#7c7f82] text-sm">Check out my latest publications and talks</p>
-    <section class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+    <section class="mt-12 grid grid-cols-2 md:md:grid-cols-5 gap-8">
       <ContentList path="/publications" v-slot="{ list }">
         <NuxtLink v-for="publication in list" :key="publication._path" :to="publication._path">
           <div class="bg-[#1c1c1c] h-32 w-full ring-[#282828] ring-1 rounded-lg mb-6"></div>

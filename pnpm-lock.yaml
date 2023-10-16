@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@hypernym/nuxt-gsap':
+    specifier: ^2.4.2
+    version: 2.4.2
   '@iconify-json/logos':
     specifier: ^1.1.37
     version: 1.1.37
@@ -27,13 +30,13 @@ dependencies:
 devDependencies:
   '@nuxt/devtools':
     specifier: latest
-    version: 1.0.0-beta.1(nuxt@3.7.4)(vite@4.4.10)
+    version: 1.0.0-beta.2(nuxt@3.7.4)(vite@4.4.10)
   '@nuxthq/studio':
     specifier: ^1.0.0
     version: 1.0.0
   '@nuxtseo/module':
     specifier: 2.0.0-beta.15
-    version: 2.0.0-beta.15(@nuxt/devtools@1.0.0-beta.1)(@unhead/vue@1.7.4)(nuxt@3.7.4)(postcss@8.4.31)(vite@4.4.10)(vue@3.3.4)(webpack@5.88.2)
+    version: 2.0.0-beta.15(@nuxt/devtools@1.0.0-beta.2)(@unhead/vue@1.7.4)(nuxt@3.7.4)(postcss@8.4.31)(vite@4.4.10)(vue@3.3.4)(webpack@5.88.2)
   nuxt:
     specifier: ^3.7.4
     version: 3.7.4
@@ -850,6 +853,12 @@ packages:
       vue: 3.3.4
     dev: false
 
+  /@hypernym/nuxt-gsap@2.4.2:
+    resolution: {integrity: sha512-Oep+0ABn58PbJo4tX8A8ja2hGjjBtyFE7DJAF/q8DIDGXMFaZlTbvcreCmMdKhuJ5NR8ODE0fEObUEYci901gg==}
+    dependencies:
+      gsap: 3.12.2
+    dev: false
+
   /@iconify-json/carbon@1.1.21:
     resolution: {integrity: sha512-bK2cMVM4noBU+FGlay433flpXLRzQu0ED095iAnoO6ka3yb4uz0lvb8acpN5gthyGLJ89C4HpfIbQZLQnMKQww==}
     dependencies:
@@ -1180,7 +1189,23 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxt/devtools-ui-kit@1.0.0-beta.1(@nuxt/devtools@1.0.0-beta.1)(fuse.js@6.6.2)(nuxt@3.7.4)(postcss@8.4.31)(vite@4.4.10)(vue@3.3.4)(webpack@5.88.2):
+  /@nuxt/devtools-kit@1.0.0-beta.2(nuxt@3.7.4)(vite@4.4.10):
+    resolution: {integrity: sha512-CLOrUAlerqS2jZw8zFbWM+R5PIfwzFKbmAJDQklqvGcCfi4MtSbOoO7f5O6F6jKzTFkOi1/pW/FSpvpsyMV/gw==}
+    peerDependencies:
+      nuxt: ^3.7.4
+      vite: '*'
+    dependencies:
+      '@nuxt/kit': 3.7.4
+      '@nuxt/schema': 3.7.4
+      execa: 7.2.0
+      nuxt: 3.7.4
+      vite: 4.4.10
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
+
+  /@nuxt/devtools-ui-kit@1.0.0-beta.1(@nuxt/devtools@1.0.0-beta.2)(fuse.js@6.6.2)(nuxt@3.7.4)(postcss@8.4.31)(vite@4.4.10)(vue@3.3.4)(webpack@5.88.2):
     resolution: {integrity: sha512-HDZBp/qxsFpYzuv9zQPoq0+RxApVKhlDrGrKAhEdIW0ffZ2JqN8rTtVIr93nI4hFlrBdcJcCKRXt23LeGIXEMg==}
     peerDependencies:
       '@nuxt/devtools': 1.0.0-beta.1
@@ -1189,7 +1214,7 @@ packages:
       '@iconify-json/logos': 1.1.37
       '@iconify-json/ri': 1.1.12
       '@iconify-json/tabler': 1.1.94
-      '@nuxt/devtools': 1.0.0-beta.1(nuxt@3.7.4)(vite@4.4.10)
+      '@nuxt/devtools': 1.0.0-beta.2(nuxt@3.7.4)(vite@4.4.10)
       '@nuxt/devtools-kit': 1.0.0-beta.1(nuxt@3.7.4)(vite@4.4.10)
       '@nuxt/kit': 3.7.4
       '@nuxtjs/color-mode': 3.3.0
@@ -1230,8 +1255,8 @@ packages:
       - webpack
     dev: true
 
-  /@nuxt/devtools-wizard@1.0.0-beta.1:
-    resolution: {integrity: sha512-xq8unTHjroV0siLMaJZ3HHdv+VukzRWnhu5XW7UqR/r4wBbvHBSrOFl9PpHRS/Mo4qJCPyOcZkOKCedr80jHew==}
+  /@nuxt/devtools-wizard@1.0.0-beta.2:
+    resolution: {integrity: sha512-kHiLfHuRla+kAQO7xHL+jmPk0OINis3ilakbBm6DtTdqg4citHfP5Qm0IyvOXW9PfI0Gr7mOh50ZtvzA3dMNkw==}
     hasBin: true
     dependencies:
       consola: 3.2.3
@@ -1246,16 +1271,16 @@ packages:
       semver: 7.5.4
     dev: true
 
-  /@nuxt/devtools@1.0.0-beta.1(nuxt@3.7.4)(vite@4.4.10):
-    resolution: {integrity: sha512-Ji/WbjTsNnz/ftRQLB2pFpvlrLCz17nbuaA9mI3+v4w+LhRWDy5KmwHn05AmZz+OR3+VICINr1HZE7kkKieUkg==}
+  /@nuxt/devtools@1.0.0-beta.2(nuxt@3.7.4)(vite@4.4.10):
+    resolution: {integrity: sha512-GEPnPEsTCFDA+r7IAnUKnVJtk6tJLo0pK2DXBEaCXhnFcrneXLzyNFEtKffTzISGTgVISMAo5ps0Twtq0vNspQ==}
     hasBin: true
     peerDependencies:
       nuxt: ^3.7.4
       vite: '*'
     dependencies:
       '@antfu/utils': 0.7.6
-      '@nuxt/devtools-kit': 1.0.0-beta.1(nuxt@3.7.4)(vite@4.4.10)
-      '@nuxt/devtools-wizard': 1.0.0-beta.1
+      '@nuxt/devtools-kit': 1.0.0-beta.2(nuxt@3.7.4)(vite@4.4.10)
+      '@nuxt/devtools-wizard': 1.0.0-beta.2
       '@nuxt/kit': 3.7.4
       birpc: 0.2.14
       consola: 3.2.3
@@ -1606,13 +1631,13 @@ packages:
       - webpack
     dev: false
 
-  /@nuxtseo/module@2.0.0-beta.15(@nuxt/devtools@1.0.0-beta.1)(@unhead/vue@1.7.4)(nuxt@3.7.4)(postcss@8.4.31)(vite@4.4.10)(vue@3.3.4)(webpack@5.88.2):
+  /@nuxtseo/module@2.0.0-beta.15(@nuxt/devtools@1.0.0-beta.2)(@unhead/vue@1.7.4)(nuxt@3.7.4)(postcss@8.4.31)(vite@4.4.10)(vue@3.3.4)(webpack@5.88.2):
     resolution: {integrity: sha512-LS2oqLXMwtOIkhJ1UarBweCUNsci/aVLfKRl7i2GvZSW3G3u1QDDgn3Ejs1GulhcaYf82W0Fhmgqpq+j5PSY5Q==}
     dependencies:
       '@nuxt/kit': 3.7.4
       chalk: 5.3.0
       defu: 6.1.2
-      nuxt-link-checker: 2.1.9(@nuxt/devtools@1.0.0-beta.1)(nuxt@3.7.4)(postcss@8.4.31)(vite@4.4.10)(vue@3.3.4)(webpack@5.88.2)
+      nuxt-link-checker: 2.1.9(@nuxt/devtools@1.0.0-beta.2)(nuxt@3.7.4)(postcss@8.4.31)(vite@4.4.10)(vue@3.3.4)(webpack@5.88.2)
       nuxt-og-image: 2.1.1(vue@3.3.4)
       nuxt-schema-org: 2.2.0(@unhead/vue@1.7.4)
       nuxt-seo-experiments: 3.1.5(vue@3.3.4)
@@ -4802,6 +4827,10 @@ packages:
   /graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
+  /gsap@3.12.2:
+    resolution: {integrity: sha512-EkYnpG8qHgYBFAwsgsGEqvT1WUidX0tt/ijepx7z8EUJHElykg91RvW1XbkT59T0gZzzszOpjQv7SE41XuIXyQ==}
+    dev: false
+
   /gzip-size@6.0.0:
     resolution: {integrity: sha512-ax7ZYomf6jqPTQ4+XCpUGyXKHk5WweS+e05MBO4/y3WJ5RkmPXNKvX+bx1behVILVwr6JSQvZAku021CHPXG3Q==}
     engines: {node: '>=10'}
@@ -7062,11 +7091,11 @@ packages:
       - supports-color
     dev: true
 
-  /nuxt-link-checker@2.1.9(@nuxt/devtools@1.0.0-beta.1)(nuxt@3.7.4)(postcss@8.4.31)(vite@4.4.10)(vue@3.3.4)(webpack@5.88.2):
+  /nuxt-link-checker@2.1.9(@nuxt/devtools@1.0.0-beta.2)(nuxt@3.7.4)(postcss@8.4.31)(vite@4.4.10)(vue@3.3.4)(webpack@5.88.2):
     resolution: {integrity: sha512-/liCnpMAWIvcWRu/KuulEBKp70w3/Qmg36zUMjg/zZbLrdFb9vII8PCSf0ni21I38w9aUj0D/Yx7ABJjEVPSNw==}
     dependencies:
       '@nuxt/devtools-kit': 1.0.0-beta.1(nuxt@3.7.4)(vite@4.4.10)
-      '@nuxt/devtools-ui-kit': 1.0.0-beta.1(@nuxt/devtools@1.0.0-beta.1)(fuse.js@6.6.2)(nuxt@3.7.4)(postcss@8.4.31)(vite@4.4.10)(vue@3.3.4)(webpack@5.88.2)
+      '@nuxt/devtools-ui-kit': 1.0.0-beta.1(@nuxt/devtools@1.0.0-beta.2)(fuse.js@6.6.2)(nuxt@3.7.4)(postcss@8.4.31)(vite@4.4.10)(vue@3.3.4)(webpack@5.88.2)
       '@nuxt/kit': 3.7.4
       '@vueuse/core': 10.4.1(vue@3.3.4)
       chalk: 5.3.0

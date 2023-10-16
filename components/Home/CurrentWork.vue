@@ -2,10 +2,14 @@
   <div>
     <section class="rounded-lg bg-[#1c1c1c] ring-[#282828] ring-1 p-6 h-full">
       <div class="space-y-1 mb-4">
-        <h1 class="font-bold leading-none mb-1">Current Workplace</h1>
-        <p class="text-sm text-[#7C7F82]">
-          I am currently working at <a href="https://www.bonlook.ca/" class="underline">Bonlook</a> as a Store Manager.
-        </p>
+        <h1 class="font-bold leading-none mb-6">Current Workplace</h1>
+        <div class="flex space-x-4 items-center ring-[#282828] ring-1 p-4 rounded-lg">
+          <img src="bl.png" alt="Bonlook Logo" class="h-8 w-8 rounded-full opacity-60">
+          <div>
+            <h4 class="tetx-sm">Bonlook</h4>
+            <p class="text-xs text-[#7C7F82]">As a Store Manager.</p>
+          </div>
+        </div>
       </div>
     </section>
   </div>

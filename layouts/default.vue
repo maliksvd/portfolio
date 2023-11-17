@@ -1,7 +1,6 @@
 <template>
-  <div class="w-full min-h-screen flex flex-col md:flex-row">
-    <SideNavigation />
-    <main class="main-wrapper opacity-0 max-w-sm md:max-w-6xl mx-auto my-12">
+  <div class="w-full">
+    <main class="main-wrapper opacity-0 px-8 py-8 mx-auto">
       <slot />
     </main>
   </div>
@@ -11,8 +10,6 @@
 
 const route = useRoute()
 const { $gsap } = useNuxtApp()
-
-console.log($gsap)
 
 if ($gsap) {
   const animate = () => {
@@ -26,4 +23,5 @@ if ($gsap) {
 }
 </script>
 
-<style></style>
+<style>
+</style>

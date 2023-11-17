@@ -1,12 +1,13 @@
 <template>
-  <div>
-    <section class="rounded-lg py-8 bg-[#1c1c1c] p-6 ring-[#282828] ring-1">
-      <h1 class="text-3xl md:text-4xl bg-gradient mb-6 gradient-text max-w-2xl leading-10">Creating innovative digital
-        experiences with SwiftUI, Nuxt, and Figma.</h1>
-      <p class="text-[rgb(169,169,169)] text-base mb-8">Based in Canada</p>
-      <UButton icon="i-solar-arrow-right-linear" label="Contact/Get in touch" color="black" size="lg" variant="ghost"
-        class="ring-[#282828] ring-1" @click="openEmailClient" />
-    </section>
+  <div class="col-span-2 rounded-lg p-6 py-4 bg-white ring-neutral-300 shadow-sm ring-1">
+    <div class="flex space-x-2 items-center mb-4">
+      <UIcon name="i-ph-megaphone-simple-duotone" class="h-5 w-5" />
+      <h2 class="font-bold text-lg">Introduction</h2>
+    </div>
+    <p class="text-sm">Avec plus de 6 ans d'expérience dans le domaine, je prends plaisir à mêler beau,
+      design et
+      technologie pour créer
+      des expériences web uniques et sur mesure qui dépassent les attentes de mes clients.</p>
   </div>
 </template>
 
@@ -17,4 +18,5 @@ const openEmailClient = () => {
 </script>
 
 
-<style></style>
+<style>
+</style>

@@ -1,15 +1,22 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ['@nuxt/ui', '@nuxt/content', '@hypernym/nuxt-gsap', '@nuxtseo/module', '@nuxthq/studio'],
+  modules: ['@nuxt/ui', '@nuxt/content', '@hypernym/nuxt-gsap', '@nuxtseo/module', '@nuxthq/studio', '@nuxtjs/google-fonts'],
 
   ui: {
-    icons: ['solar', 'logos'],
+    icons: ['solar', 'logos', 'ph'],
     primary: 'zinc',
   },
 
   colorMode: {
-    preference: 'dark'
+    preference: 'light'
+  },
+
+  googleFonts: {
+    families: {
+      Inter: [400, 700],
+      "Plus+Jakarta+Sans": [400,500,600,700],
+    }
   },
 
   content: {

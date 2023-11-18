@@ -3,11 +3,10 @@
     <div class="flex flex-col space-y-12 justify-between">
       <div class="flex space-x-4 items-center">
         <UAvatar chip-color="primary" chip-text="" chip-position="top-right" size="sm" src="/avatar.png" alt="Avatar" />
-        <h1 class="font-semibold">Malik Krechiche</h1>
+        <h1 class="text-lg font-semibold">Malik Krechiche</h1>
       </div>
       <HomeHero />
       <HomeProjects />
-
     </div>
   </div>
 </template>

@@ -3,31 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    color: white;
+    background-color: #141414;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    --token-93feb396-66a5-44c8-87f7-58d1c28cc454: rgb(255, 255, 255);
+    --token-a4c4dc11-df6a-49af-9853-6cecd4f40e2e: rgb(20, 20, 20);
+    --token-44060067-f197-41f4-ad18-8dde6294078d: rgb(23, 23, 23);
+    --token-b8ef1c07-8d3b-4e12-b2aa-f3e375bab193: rgb(38, 38, 38);
+    --token-a5abe574-8268-4a02-97e2-933a718779b2: rgb(33, 33, 33);
+}
+
+.test {
+    background-color: transparent;
+    background-image: repeating-linear-gradient(
+        135deg,
+        var(--token-b8ef1c07-8d3b-4e12-b2aa-f3e375bab193, rgb(247, 247, 247)),
+        var(--token-b8ef1c07-8d3b-4e12-b2aa-f3e375bab193, rgb(247, 247, 247))
+            2px,
+        var(--token-44060067-f197-41f4-ad18-8dde6294078d, rgb(245, 245, 245))
+            2px,
+        var(--token-44060067-f197-41f4-ad18-8dde6294078d, rgb(245, 245, 245))
+            8px
+    );
+    border-radius: 0;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }
